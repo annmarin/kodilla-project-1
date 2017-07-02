@@ -1,0 +1,29 @@
+{
+  "name": "kodilla-3.4",
+  "version": "1.0.0",
+  "description": "desc",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annmarin/kodilla-project-1.git"
+  },
+  "keywords": [
+    "key"
+  ],
+  "author": "Anna Brodka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annmarin/kodilla-project-1/issues"
+  },
+  "homepage": "https://github.com/annmarin/kodilla-project-1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
