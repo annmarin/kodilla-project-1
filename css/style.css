@@ -10,13 +10,25 @@ h1 {
   font-weight: 300;
   font-size: 60px; }
 
+@media (max-width: 767px) {
+  h1 {
+    font-size: 45px; } }
+
 h2 {
   font-weight: 300;
   font-size: 35px; }
 
+@media (max-width: 767px) {
+  h2 {
+    font-size: 30px; } }
+
 h3 {
   font-weight: 300;
   font-size: 30px; }
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: 25px; } }
 
 h4 {
   font-weight: 700;
@@ -38,6 +50,10 @@ p, li {
   line-height: 24px;
   font-size: 14px; }
 
+@media (max-width: 767px) {
+  p, li {
+    line-height: 18px; } }
+
 .btn {
   text-transform: uppercase;
   font-weight: 700;
@@ -54,9 +70,9 @@ p, li {
 /* Hero */
 header {
   background: url(../images/build/hero-1.jpg) center/cover no-repeat;
+  width: 100%;
   height: 100vh;
-  color: #fff;
-  position: relative; }
+  color: #fff; }
   header h1 {
     margin-top: 350px; }
   header p {
@@ -64,11 +80,15 @@ header {
     margin-top: 3.5%;
     max-width: 460px; }
 
+@media (max-width: 767px) {
+  header h1 {
+    margin-top: 35vh; } }
+
 .logo {
   background: url(../images/build/logo.png) no-repeat;
-  width: 45px;
-  height: 45px;
-  margin-top: 10%; }
+  width: 41px;
+  height: 41px;
+  margin-top: 30px; }
   .logo p {
     font-family: 'Merriweather', serif;
     font-size: 20.8px;
@@ -76,33 +96,36 @@ header {
     margin-left: 50px; }
 
 .iphone {
-  position: absolute;
-  top: 285px;
-  right: -4%; }
+  margin-top: 300px;
+  padding: 0;
+  min-height: 920px;
+  position: relative; }
   .iphone img {
-    min-width: 660px;
-    min-height: 920px; }
+    position: absolute;
+    top: 0;
+    right: -50px; }
 
 /* RWD */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1200px) and (max-width: 1287px) {
   .iphone {
-    position: absolute;
-    top: 285px;
-    right: 4%; }
-    .iphone img {
-      max-width: 660px;
-      max-height: 920px; } }
+    right: 50px; } }
 
-@media (max-width: 991px) {
-  .iphone img {
+@media (max-width: 1199px) {
+  .iphone {
     display: none; } }
 
 /* Text */
 .first-column {
-  margin-top: 6.5%; }
+  margin-top: -120px; }
 
 .second-column {
-  margin-top: 23%; }
+  margin-top: 73px; }
+
+@media (max-width: 1199px) {
+  .first-column {
+    margin-top: 6.5%; }
+  .second-column {
+    margin-top: 23%; } }
 
 @media (max-width: 991px) {
   .second-column {
@@ -195,11 +218,11 @@ header {
 
 /* Full-image */
 .full-image {
-  background: url(../images/build/full-image.jpg) left bottom/cover no-repeat;
+  background: url(../images/build/full-image.jpg) left top/cover no-repeat;
   color: #fff;
-  height: 100vh;
+  height: 80vh;
   margin-top: 7.5%;
-  padding-top: 480px; }
+  padding-top: 35vh; }
   .full-image p {
     max-width: 450px;
     margin-top: 2.5%;
@@ -212,9 +235,16 @@ header {
   .full-image {
     background: url(../images/build/full-image.jpg) center/cover no-repeat; } }
 
-@media (max-width: 379px) {
+@media (min-width: 421px) and (max-width: 767px) {
   .full-image {
-    padding-top: 360px; } }
+    height: 500px;
+    padding-top: 150px; } }
+
+@media (max-width: 412px) {
+  .full-image h1 {
+    font-size: 35px;
+    padding-top: 0;
+    margin-top: -25px; } }
 
 /* Team */
 .team {
